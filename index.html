@@ -25,18 +25,18 @@
     <section id="hero-section">
       <div class="hero-content">
         <div class="hero-buttons">
-          <a href="html/menu.html" class="btn-menu text-decoration-none">NUESTRO MENÚ</a>
-          <a href="html/reservation.html" class="btn-order text-decoration-none">RESERVA YA!</a>
+          <a href="html/menu.html" class="btn-menu text-decoration-none" data-i18n="hero.menu_btn">NUESTRO MENÚ</a>
+          <a href="html/reservation.html" class="btn-order text-decoration-none" data-i18n="hero.reserve_btn">RESERVA YA!</a>
         </div>
       </div>
     </section>
 
     <section id="carroucel-section">
 
-      <h2 id="title-carroucel" class="mb-4">Cena.Disfruta.<br>Comparte.</br></h2>
+      <h2 id="title-carroucel" class="mb-4" data-i18n="carousel.title">Cena.Disfruta.<br>Comparte.</br></h2>
       
       <div class="carrusel-wrap">
-        <button class="flecha flecha-izq" id="btnPrev" aria-label="Anterior">
+        <button class="flecha flecha-izq" id="btnPrev" aria-label="Anterior" data-i18n-aria-label="carousel.prev_aria">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2f4f3e" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
         </button>
     
@@ -57,20 +57,20 @@
           </div>
         </div>
     
-        <button class="flecha flecha-der" id="btnNext" aria-label="Siguiente">
+        <button class="flecha flecha-der" id="btnNext" aria-label="Siguiente" data-i18n-aria-label="carousel.next_aria">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2f4f3e" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
         </button>
       </div>
 
       <div class="d-flex align-items-center justify-content-between mt-4 pb-3">
-        <a href="html/about.html" id="about-btn" class="btn text-decoration-none ">CONÓCENOS!</a>
+        <a href="html/about.html" id="about-btn" class="btn text-decoration-none " data-i18n="about.btn">CONÓCENOS!</a>
         
         <ul id="list-redes" class="mb-0">
           <li>
             <a href="https://www.instagram.com/mallorcavibes.mv/" class="text-decoration-none">@mallorcavibes.mv</a>
           </li>
           <li class="li-redes text-end"> 
-            <small>Síguenos en Instagram</small>
+            <small data-i18n="instagram.follow">Síguenos en Instagram</small>
           </li>
         </ul>
 
@@ -78,7 +78,7 @@
     </section>
 
     <section id="google-opinions">
-      <h1 class="section-title">Nuestros clientes opinan</h1>
+      <h1 class="section-title" data-i18n="reviews.title">Nuestros clientes opinan</h1>
       <!-- Elfsight Google Reviews | Untitled Google Reviews -->
       <script src="https://elfsightcdn.com/platform.js" async></script>
       <div class="elfsight-app-364b412d-c922-4b7b-8bd2-c5400825ebcb" data-elfsight-app-lazy></div>
@@ -91,8 +91,9 @@
 
     <div id="footer-container"></div>
     <script src="js/footer.js"></script>
+    
+    <script src="js/i18n.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
-
-

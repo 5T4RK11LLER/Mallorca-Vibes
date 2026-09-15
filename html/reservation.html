@@ -24,22 +24,22 @@
 
       <!-- ============ SECCIÓN: RESERVA ============ -->
       <section class="reservation-section" id="reservation">
-        <h2 id="reservation-title">Reserva tu mesa</h2>
-        <p id="reservation-subtitle">Disfruta de nuestra fusión hispano-cubana. ¡Te esperamos!</p>
+        <h2 id="reservation-title" data-i18n="reservation.title">Reserva tu mesa</h2>
+        <p id="reservation-subtitle" data-i18n="reservation.subtitle">Disfruta de nuestra fusión hispano-cubana. ¡Te esperamos!</p>
 
         <form class="row g-3" id="formReservacion">
           <div class="col-md-6" id="field-name">
-            <label for="inputName" class="form-label" id="label-name">Nombre y apellido</label>
-            <input type="text" class="form-control" id="inputName" placeholder="Nombre y apellido" required>
+            <label for="inputName" class="form-label" id="label-name" data-i18n="reservation.name_label">Nombre y apellido</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Nombre y apellido" data-i18n-placeholder="reservation.name_label" required>
           </div>
 
           <div class="col-md-6" id="field-date">
-            <label for="fecha" class="form-label" id="label-date">Selecciona una fecha</label>
-            <input type="text" class="form-control" id="fecha" placeholder="Selecciona una fecha" required>
+            <label for="fecha" class="form-label" id="label-date" data-i18n="reservation.date_label">Selecciona una fecha</label>
+            <input type="text" class="form-control" id="fecha" placeholder="Selecciona una fecha" data-i18n-placeholder="reservation.date_label" required>
           </div>
 
           <div class="col-6 d-flex flex-column align-items-center" id="field-time">
-            <label class="form-label" id="label-time">Hora</label>
+            <label class="form-label" id="label-time" data-i18n="reservation.time_label">Hora</label>
             <div class="input-group" style="max-width: 150px;">
               <button class="btn btn-outline-secondary" type="button" id="btnHoraMenos">−</button>
               <input type="text" class="form-control text-center" id="hora" placeholder="--:--" readonly required>
@@ -48,7 +48,7 @@
           </div>
 
           <div class="col-6 d-flex flex-column align-items-center" id="field-guests">
-            <label class="form-label" id="label-guests">Número de personas</label>
+            <label class="form-label" id="label-guests" data-i18n="reservation.guests_label">Número de personas</label>
             <div class="input-group" style="max-width: 150px;">
               <button class="btn btn-outline-secondary" type="button" id="btnMenos">−</button>
               <input type="text" class="form-control text-center" id="numPersonas" value="1" readonly>
@@ -57,15 +57,15 @@
           </div>
 
           <div class="col-12 col-md-12 d-flex align-items-end justify-content-center" id="field-submit">
-            <button type="submit" class="btn btn-primary" id="btnReservar">Reservar</button>
+            <button type="submit" class="btn btn-primary" id="btnReservar" data-i18n="reservation.submit_btn">Reservar</button>
           </div>
         </form>
       </section>
 
       <!-- ============ SECCIÓN: UBICACIÓN ============ -->
       <section class="location-section" id="ubicacion">
-        <h2 id="location-title">Ubicación</h2>
-        <p id="location-subtitle">Ven a visitarnos, te esperamos con los brazos abiertos.</p>
+        <h2 id="location-title" data-i18n="location.title">Ubicación</h2>
+        <p id="location-subtitle" data-i18n="location.subtitle">Ven a visitarnos, te esperamos con los brazos abiertos.</p>
 
         <div class="map-container" id="map-container">
           <iframe
@@ -85,7 +85,8 @@
              target="_blank"
              rel="noopener noreferrer"
              class="btn btn-primary"
-             id="btnComoLlegar">
+             id="btnComoLlegar"
+             data-i18n="location.directions_btn">
             Cómo llegar
           </a>
         </div>
@@ -107,6 +108,8 @@
 
     <div id="footer-container"></div>
     <script src="../js/footer.js"></script>
+
+      <script src="../js/i18n.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/l10n/es.js"></script>
