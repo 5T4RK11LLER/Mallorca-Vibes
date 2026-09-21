@@ -20,6 +20,18 @@ const translations = {
     "instagram.follow": "Síguenos en Instagram",
     "reviews.title": "Nuestros clientes opinan",
 
+    // ---------- INDEX: INFO ----------
+    "info.wait": "Te esperamos con los brazos abiertos",
+    "info.title": "Ven a vivir la experiencia",
+    "info.address_label": "Ubicación",
+    "info.address": "Carrer Cervantes, 49, 07638 Colònia de Sant Jordi, Illes Balears, España",
+    "info.hours_label": "Horario",
+    "info.hours": "Lunes - Domingo <br>12:30 - 15:00 <br>18:00 - 22:00",
+    "info.contact_label": "Contacto y reservas",
+    "info.phone": "+34 682 16 80 79 <br>vibesmallorca0@gmail.com",
+    "info.instagram_label": "Instagram",
+    "info.reserve_btn": "Reserva ya!",
+
     // ---------- ABOUT ----------
     "about.title": "Sobre Nosotros",
 
@@ -154,6 +166,18 @@ const translations = {
     "about.btn": "ABOUT US!",
     "instagram.follow": "Follow us on Instagram",
     "reviews.title": "What our customers say",
+
+    // ---------- INDEX: INFO ----------
+    "info.wait": "We welcome you with open arms",
+    "info.title": "Come and live the experience",
+    "info.address_label": "Location",
+    "info.address": "Carrer Cervantes, 49, 07638 Colònia de Sant Jordi, Balearic Islands, Spain",
+    "info.hours_label": "Opening hours",
+    "info.hours": "Monday - Sunday <br>12:30 - 15:00 <br>18:00 - 22:00",
+    "info.contact_label": "Contact & bookings",
+    "info.phone": "+34 682 16 80 79 <br>vibesmallorca0@gmail.com",
+    "info.instagram_label": "Instagram",
+    "info.reserve_btn": "Book now!",
 
     // ---------- ABOUT ----------
     "about.title": "About Us",
