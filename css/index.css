@@ -206,7 +206,7 @@
 
     #carroucel-section .d-flex{
         flex-direction: column;
-        align-items: flex-center !important;
+        align-items: center !important;
         gap: 1.25rem;
     }
 
@@ -278,5 +278,164 @@
     }
 }
 
+#info-home{
+    background-color: var(--primary-color);
+    padding: 2rem;
+}
+
+.card-info-home{
+    background-color: var(--secondary-color) !important;
+    padding: 2rem;
+}
+
+.video{
+    border-radius: 10px;
+    border: solid var(--contast-color) 2px;
+}
+
+.text-wait{
+    font-family: var(--font-seconday);
+    font-size: 1.8rem;
+    color: var(--contast-color);
+    text-align: center;
+}
 
 
+.card-title-info{
+    margin-top: 1rem;
+    font-family: var(--font-seconday);
+    font-size: 2.2rem;
+    color: var(--primary-color) !important;
+    text-align: center;
+}
+
+.card-title-info small{
+    display: block;       
+    margin-top: 1rem;
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+}
+
+#info-home {
+  --info-green: var(--primary-color);
+  --info-gold: #9a6b0f;
+  --info-text-soft: #5f5f57;
+  --info-yellow: var(--contast-color);
+}
+ 
+/* ---------- Grid 2x2 ---------- */
+#info-home .info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.75rem 2rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  text-align: center;
+}
+ 
+/* ---------- Cada bloque: icono + texto ---------- */
+#info-home .info-item {
+  display: flex;
+  flex-direction: column;       
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 0;                  
+}
+ 
+#info-home .info-icon {
+  flex: 0 0 auto;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  color: var(--info-green);
+}
+ 
+#info-home .info-text {
+  min-width: 0;
+}
+ 
+#info-home .info-label {
+  margin: 0 0 0.25rem;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--info-green);
+}
+ 
+#info-home .info-text p,
+#info-home .info-text a {
+  margin: 0;
+  font-family: "Cormorant Upright", serif;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: var(--info-text-soft);
+  overflow-wrap: anywhere;       
+}
+ 
+#info-home .info-text a {
+  display: inline-block;
+  color: var(--info-gold);
+  font-weight: 600;
+  text-decoration: none;
+}
+ 
+#info-home .info-text a:hover,
+#info-home .info-text a:focus-visible {
+  text-decoration: underline;
+}
+ 
+/* ---------- Botón de reserva ---------- */
+#info-home .btn-info-reserve {
+  display: inline-block;
+  margin-top: 1.75rem;
+  padding: 0.7rem 1.6rem;
+  border-radius: 0.5rem;
+  background: var(--info-yellow);
+  color: var(--info-green);
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+ 
+#info-home .btn-info-reserve:hover,
+#info-home .btn-info-reserve:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  color: var(--info-green);
+}
+ 
+/* ---------- Responsive ---------- */
+@media (max-width: 575.98px) {
+  #info-home .info-grid {
+    grid-template-columns: 1fr; 
+    gap: 1.25rem;
+  }
+ 
+  #info-home .btn-info-reserve {
+    display: block;
+    text-align: center;
+  }
+}
+ 
+@media (prefers-reduced-motion: reduce) {
+  #info-home .btn-info-reserve {
+    transition: none;
+  }
+}
+ 
+
+
+/* ---------- Menos relleno en móvil ---------- */
+@media (max-width: 575.98px) {
+  #info-home { padding: 1rem; }
+  .card-info-home { padding: 1rem; }
+}
+
+/* ---------- Info card: todo centrado ---------- */
+#info-home .card-body {
+  text-align: center;
+}

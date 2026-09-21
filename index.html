@@ -13,11 +13,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Upright:wght@300;400;500;600;700&family=Great+Vibes&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Upright:wght@300;400;500;600;700&family=Great+Vibes&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body id="body">
     <div id="navbar-container"></div>
@@ -33,7 +31,7 @@
 
     <section id="carroucel-section">
 
-      <h2 id="title-carroucel" class="mb-4" data-i18n="carousel.title">Cena.Disfruta.<br>Comparte.</br></h2>
+      <h2 id="title-carroucel" class="mb-4" data-i18n="carousel.title">Cena.Disfruta.<br>Comparte.</h2>
       
       <div class="carrusel-wrap">
         <button class="flecha flecha-izq" id="btnPrev" aria-label="Anterior" data-i18n-aria-label="carousel.prev_aria">
@@ -83,6 +81,73 @@
       <script src="https://elfsightcdn.com/platform.js" async></script>
       <div class="elfsight-app-364b412d-c922-4b7b-8bd2-c5400825ebcb" data-elfsight-app-lazy></div>
     </section>
+
+    <section id="info-home">
+      <div class="card card-info-home">
+      <div class="row g-0">
+
+        <div class="col-md-8 d-flex align-items-center">
+          <div class="card-body w-100">
+            <p class="mb-0 fst-italic text-wait" data-i18n="info.wait">Te esperamos con los brazos abiertos</p>
+            <h5 class="card-title card-title-info"><span data-i18n="info.title">Ven a vivir la experiencia</span> <small>Mallorca Vibes</small></h5>
+            
+            <div class="info-grid">
+ 
+              <div class="info-item">
+                <i class="bi bi-geo-alt info-icon" aria-hidden="true"></i>
+                <div class="info-text">
+                  <h6 class="info-label" data-i18n="info.address_label">Ubicación</h6>
+                  <p data-i18n="info.address">Carrer Cervantes, 49, 07638 Colònia de Sant Jordi, Illes Balears, España</p>
+                </div>
+              </div>
+            
+              <div class="info-item">
+                <i class="bi bi-clock info-icon" aria-hidden="true"></i>
+                <div class="info-text">
+                  <h6 class="info-label" data-i18n="info.hours_label">Horario</h6>
+                  <p data-i18n="info.hours">Lunes - Domingo <br>12:30 - 15:00 <br>18:00 - 22:00</p>
+                </div>
+              </div>
+            
+              <div class="info-item">
+                <i class="bi bi-telephone info-icon" aria-hidden="true"></i>
+                <div class="info-text">
+                  <h6 class="info-label" data-i18n="info.contact_label">Contacto y reservas</h6>
+                  <p data-i18n="info.phone">+34 682 16 80 79 <br>vibesmallorca0@gmail.com</p>
+                </div>
+              </div>
+            
+              <div class="info-item">
+                <i class="bi bi-camera info-icon" aria-hidden="true"></i>
+                <div class="info-text">
+                  <h6 class="info-label" data-i18n="info.instagram_label">Instagram</h6>
+                  <a href="https://www.instagram.com/mallorcavibes.mv/" target="_blank" rel="noopener">@mallorcavibes.mv</a>
+                </div>
+              </div>
+            
+            </div>
+ 
+          <a href="html/reservation.html" class="btn-info-reserve d-none d-md-inline-block" data-i18n="info.reserve_btn">Reservar mesa ahora</a>
+
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="h-100 min-vh-25">
+            <video src="medio/video/IMG_1325.MOV" class="video w-100 h-100 object-fit-cover" autoplay loop muted></video>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Botón de reserva solo en móvil: aparece después del video -->
+      <div class="d-md-none text-center">
+        <a href="html/reservation.html" class="btn-info-reserve" data-i18n="info.reserve_btn">Reservar mesa ahora</a>
+      </div>
+    </div>
+    </section>
+
+
     
     <script src="js/navbar.js"></script>
     
