@@ -3,20 +3,114 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About-Us | Mallorca-Vibes</title>
+
+    <title data-i18n="aboutpage.page_title">Sobre nosotros | Mallorca-Vibes</title>
 
     <link rel="stylesheet" href="../css/roots.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/about.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Upright:wght@300;400;500;600;700&family=Great+Vibes&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <div id="navbar-container"></div>
 
-    <h1 data-i18n="about.title">Sobre Nosotros</h1>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
+  </head>
+  <body id="body">
     
+    <div id="navbar-container"></div>
+    
+    <section id="intro">
+      <h1 id="intro-title" data-i18n="aboutpage.intro_title">Cuando estás <span id="intro-title-script">aquí,</span><br>eres familia</h1>
+      <p id="intro-text-1" data-i18n="aboutpage.intro_1">Mallorca Vibes nace en Colònia de Sant Jordi con la ilusión de crear mucho más que un restaurante: un lugar donde sentirte como en casa, desconectar y disfrutar.</p>
+      <p id="intro-text-2" data-i18n="aboutpage.intro_2">Un espacio mágico y vibrante, rodeado de vegetación, tonos verde esmeralda y luces cálidas, donde nuestra cocina de tapas fusión se encuentra con cócteles preparados con mimo y personalidad.</p>
+      <p id="intro-text-3" data-i18n="aboutpage.intro_3">Aquí hacemos las cosas con amor, cariño y buenas vibras.</p>
+    </section>
+
+    <section id="banner">
+      <div id="banner-frame">
+        <div id="banner-photo">
+          <img id="banner-img" src="../medio/img/imgSection/IMG_8568.JPG.jpeg" alt="Foto del equipo y local de Mallorca Vibes" data-i18n-alt="aboutpage.banner_alt">
+        </div>
+        <span id="banner-badge" data-i18n="aboutpage.banner_badge">Noches inolvidables<span id="banner-badge-script"> en</span> Mallorca Vibes</span>
+      </div>
+    </section>
+
+    <section id="product-1">
+      <h2 id="product-1-heading" data-i18n="aboutpage.product_heading"><span id="product-1-heading-script">Desde</span> Cuba<br>a Mallorca</h2>
+
+      <div id="product-1-content">
+        <div id="product-1-info">
+          <h3 id="product-1-name" data-i18n="aboutpage.product_name">Algunas de nuestras ofertas</h3>
+
+          <div id="product-1-feature-1">
+            <h4 id="product-1-feature-1-title" data-i18n="aboutpage.f1_title">Torrezno y tostones</h4>
+            <p id="product-1-feature-1-text" data-i18n="aboutpage.f1_text">Crujiente por fuera, jugoso por dentro</p>
+          </div>
+
+          <hr id="product-1-divider-1">
+          <div id="product-1-feature-2">
+            <h4 id="product-1-feature-2-title" data-i18n="aboutpage.f2_title">Sangría</h4>
+            <p id="product-1-feature-2-text" data-i18n="aboutpage.f2_text">Fresca, afrutada y preparada al momento</p>
+          </div>
+
+          <hr id="product-1-divider-2">
+          <div id="product-1-feature-3">
+            <h4 id="product-1-feature-3-title" data-i18n="aboutpage.f3_title">Champiñones y setas al ajillo</h4>
+            <p id="product-1-feature-3-text" data-i18n="aboutpage.f3_text">Salteados con ajo, perejil y aceite de oliva</p>
+          </div>
+
+          <div id="product-1-buttons">
+            <a id="product-1-btn-menu" href="menu.html" data-i18n="aboutpage.btn_menu">Explora nuestro menú</a>
+            <a id="product-1-btn-order" href="reservation.html" data-i18n="aboutpage.btn_order">Reserva una mesa</a>
+          </div>
+        </div>
+
+        <div id="product-1-visual">
+          <div id="product-1-dish-1">
+            <img id="product-1-dish-1-img" src="../medio/img/imgSection/IMG_3271.PNG" alt="Torrezno y tostones" data-i18n-alt="aboutpage.dish1_alt">
+          </div>
+
+          <div id="product-1-dish-2">
+            <img id="product-1-dish-2-img" src="../medio/img/imgSection/IMG_2751.JPG.jpeg" alt="Sangría" data-i18n-alt="aboutpage.dish2_alt">
+          </div>
+
+          <div id="product-1-dish-3">
+            <img id="product-1-dish-3-img" src="../medio/img/imgSection/IMG_3447.PNG" alt="Champiñones y setas al ajillo" data-i18n-alt="aboutpage.dish3_alt">
+          </div>
+
+          <div id="product-1-deco-1">
+            <img id="product-1-deco-1-img" src="../medio/img/iconos/cuba.PNG" alt="">
+          </div>
+
+          <div id="product-1-deco-2">
+            <img id="product-1-deco-2-img" src="../medio/img/iconos/lemon.PNG" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="welcome">
+      <div id="welcome-text-block">
+        <h2 id="welcome-heading" data-i18n="aboutpage.welcome_heading">Tu pequeño<br>rincón en<span id="welcome-heading-script"> Mallorca</span></h2>
+        <p id="welcome-text-1" data-i18n="aboutpage.welcome_1">Somos una pareja detrás de este proyecto: él pone el corazón en la cocina y yo cuido cada detalle en sala.</p>
+        <p id="welcome-text-2" data-i18n="aboutpage.welcome_2">Para nosotros, atender bien está por encima de simplemente llenar mesas. Preferimos decir que no a una mesa antes que ofrecer una experiencia que no esté a la altura.</p>
+      </div>
+
+      <div id="welcome-image">
+        <img id="welcome-img" src="../medio/img/imgSection/IMG_1271.JPG.jpeg" alt="Foto de reserva" data-i18n-alt="aboutpage.welcome_img_alt">
+      </div>
+
+      <div id="welcome-quote-box">
+        <blockquote id="welcome-quote" data-i18n="aboutpage.welcome_quote">“Bienvenidos a nuestra casa”</blockquote>
+      </div>
+      <a id="welcome-btn" href="reservation.html" data-i18n="aboutpage.welcome_btn">Visítanos hoy</a>
+    </section>
+
     <script src="../js/navbar.js"></script>
     
     <div id="footer-container"></div>
