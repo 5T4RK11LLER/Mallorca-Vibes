@@ -1,0 +1,83 @@
+@import url(roots.css);
+
+#body {
+  margin-top: 5rem;
+  background-color: var(--secondary-color);
+  font-family: var(--font-seconday);
+  color: var(--primary-color);
+}
+
+#legal {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 50px 20px 60px;
+  font-size: 1.15rem;
+  line-height: 1.65;
+}
+
+#legal h1 {
+  font-family: var(--font-primary);
+  font-size: 3.2rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0.4rem;
+}
+
+#legal h2 {
+  font-family: var(--font-primary);
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin: 3rem 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+#legal h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 1.8rem 0 0.5rem;
+}
+
+#legal a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+#legal .legal-updated {
+  text-align: center;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+#legal .legal-index {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+#legal table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+#legal th,
+#legal td {
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+#legal th {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+@media (max-width: 576px) {
+  #legal h1 { font-size: 2.5rem; }
+  #legal h2 { font-size: 2rem; }
+  #legal { font-size: 1.05rem; }
+}

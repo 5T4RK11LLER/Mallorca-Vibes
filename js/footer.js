@@ -19,12 +19,17 @@ async function loadFooter() {
 }
 
 function adjustFooterPaths(container, isInSubfolder) {
-  const imgs = container.querySelectorAll('img');
-  imgs.forEach(img => {
-    let src = img.getAttribute('src');
-    if (!src) return;
-    if (!isInSubfolder && src.startsWith('../')) {
+  container.querySelectorAll('img').forEach(img => {
+    const src = img.getAttribute('src');
+    if (src && !isInSubfolder && src.startsWith('../')) {
       img.setAttribute('src', src.replace('../', ''));
+    }
+  });
+
+  container.querySelectorAll('a').forEach(a => {
+    const href = a.getAttribute('href');
+    if (href && !isInSubfolder && href.startsWith('../')) {
+      a.setAttribute('href', href.replace('../', ''));
     }
   });
 }

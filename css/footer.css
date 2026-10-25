@@ -82,3 +82,8 @@
         align-items: center;
     }
 }
+
+.footer-legal {
+    color: inherit;
+    text-decoration: underline;
+}
