@@ -8,7 +8,7 @@
 #hero-section{
     height: 100vh;
     height: 100svh;
-    background-image: url('../medio/img/imgSection/Section-1.jpeg');
+    background-image: url('../medio/img/imgSection/1-hero_section.webp');
     background-size: cover;
     background-position: center;
     display: flex;
