@@ -1,17 +1,48 @@
-const numeroRestaurante = "5356530630";
+const numeroRestaurante = "34682168079"
+
+const MAX_NOMBRE = 60;
+const MIN_PERSONAS = 1;
+const MAX_PERSONAS = 10;
+
+// Quita saltos de línea, caracteres de control y espacios repetidos
+function limpiarTexto(texto, max) {
+  return texto
+    .replace(/[\p{Cc}\p{Cf}]/gu, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, max);
+}
+
+// Comprueba formato dd/mm/aaaa, que exista de verdad y que no sea pasada
+function fechaValida(texto) {
+  if (!/^\d{2}\/\d{2}\/\d{4}$/.test(texto)) return false;
+  const [d, m, y] = texto.split("/").map(Number);
+  const f = new Date(y, m - 1, d);
+  if (f.getFullYear() !== y || f.getMonth() !== m - 1 || f.getDate() !== d) return false;
+  const hoy = new Date();
+  hoy.setHours(0, 0, 0, 0);
+  return f >= hoy;
+}
 
 const formReservacion = document.getElementById("formReservacion");
 
 formReservacion.addEventListener("submit", (e) => {
-  e.preventDefault(); 
+  e.preventDefault();
 
-  const nombre = document.getElementById("inputName").value;
-  const fecha = document.getElementById("fecha").value;
-  const hora = document.getElementById("hora").value;
-  const personas = document.getElementById("numPersonas").value;
+  const nombre = limpiarTexto(document.getElementById("inputName").value, MAX_NOMBRE);
+  const fecha = document.getElementById("fecha").value.trim();
+  const hora = document.getElementById("hora").value.trim();
+  const personas = parseInt(document.getElementById("numPersonas").value, 10);
 
-  if (!nombre || !fecha || !hora) {
-    alert("Por favor completa todos los campos.");
+  if (
+    !nombre ||
+    !fechaValida(fecha) ||
+    !TODOS_LOS_HORARIOS.includes(hora) ||
+    !Number.isInteger(personas) ||
+    personas < MIN_PERSONAS ||
+    personas > MAX_PERSONAS
+  ) {
+    mostrarAviso("Por favor revisa los datos de la reserva.", "warning");
     return;
   }
 
@@ -22,9 +53,6 @@ formReservacion.addEventListener("submit", (e) => {
     `Hora: ${hora}\n` +
     `Personas: ${personas}`;
 
-  const mensajeCodificado = encodeURIComponent(mensaje);
-
-  const urlWhatsApp = `https://wa.me/${numeroRestaurante}?text=${mensajeCodificado}`;
-
-  window.open(urlWhatsApp, "_blank");
+  const url = `https://wa.me/${numeroRestaurante}?text=${encodeURIComponent(mensaje)}`;
+  window.open(url, "_blank", "noopener,noreferrer");
 });

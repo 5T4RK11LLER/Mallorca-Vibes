@@ -3,7 +3,13 @@
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Reservacion | Mallorca-Vibes</title>
+      <title>Reservación | Mallorca-Vibes</title>
+
+      <meta name="description" content="Reserva tu mesa en Mallorca Vibes, Colònia de Sant Jordi. Elige fecha, hora y número de personas y confirma por WhatsApp.">
+      <meta property="og:title" content="Reserva tu mesa | Mallorca Vibes">
+      <meta property="og:description" content="Reserva en segundos y confirma por WhatsApp.">
+      <meta property="og:type" content="website">
+      <link rel="icon" href="../medio/img/logos/logo-dark.svg" type="image/svg+xml">
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +21,7 @@
       <link rel="stylesheet" href="../css/reservation.css">
 
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css">
   </head>
   <body id="body">
@@ -30,7 +37,7 @@
         <form class="row g-3" id="formReservacion">
           <div class="col-md-6" id="field-name">
             <label for="inputName" class="form-label" id="label-name" data-i18n="reservation.name_label">Nombre y apellido</label>
-            <input type="text" class="form-control" id="inputName" placeholder="Nombre y apellido" data-i18n-placeholder="reservation.name_label" required>
+            <input type="text" class="form-control" id="inputName" placeholder="Nombre y apellido" data-i18n-placeholder="reservation.name_label" maxlength="60" autocomplete="name" required>
           </div>
 
           <div class="col-md-6" id="field-date">
