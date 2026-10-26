@@ -76,6 +76,40 @@
   color: var(--secondary-color);
 }
 
+/* Botón para retirar el consentimiento del mapa */
+#btnRetirarMapa {
+  background-color: var(--contast-color);
+  border: none;
+  color: var(--primary-color);
+  font-family: var(--font-seconday);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 12px 32px;
+  border-radius: 30px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#btnRetirarMapa:hover {
+  background-color: #e0b52e;
+  color: var(--primary-color);
+}
+
+/* Mensaje que aparece al pulsarlo */
+#msgRetirar {
+  min-height: 1.6em;
+  font-weight: 600;
+}
+
+/* Nombres técnicos de la tabla de cookies */
+#legal code {
+  color: var(--primary-color);
+  background-color: rgba(46, 90, 68, 0.1);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
 @media (max-width: 576px) {
   #legal h1 { font-size: 2.5rem; }
   #legal h2 { font-size: 2rem; }
