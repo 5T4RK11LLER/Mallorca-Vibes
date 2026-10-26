@@ -41,7 +41,7 @@ const translations = {
     "aboutpage.intro_3": "Aquí hacemos las cosas con amor, cariño y buenas vibras.",
     "aboutpage.banner_alt": "Foto del equipo y local de Mallorca Vibes",
     "aboutpage.banner_badge": "Noches inolvidables<span id='banner-badge-script'> en</span> Mallorca Vibes",
-    "aboutpage.product_heading": "<span id='product-1-heading-script'>Desde</span> Cuba<br>a Mallorca",
+    "aboutpage.product_heading": "<span id='product-1-heading-script'>Desde</span> Cuba y Venezuela<br>a Mallorca",
     "aboutpage.product_name": "Algunas de nuestras ofertas",
     "aboutpage.f1_title": "Torrezno y tostones",
     "aboutpage.f1_text": "Crujiente por fuera, jugoso por dentro",
@@ -63,7 +63,7 @@ const translations = {
 
     // ---------- RESERVATION ----------
     "reservation.title": "Reserva tu mesa",
-    "reservation.subtitle": "Disfruta de nuestra fusión hispano-cubana. ¡Te esperamos!",
+    "reservation.subtitle": "Disfruta de nuestra fusión hispano-cubana-venezolana. ¡Te esperamos!",
     "reservation.name_label": "Nombre y apellido",
     "reservation.date_label": "Selecciona una fecha",
     "reservation.time_label": "Hora",
@@ -299,7 +299,7 @@ const translations = {
     "aboutpage.intro_3": "Here we do things with love, affection and good vibes.",
     "aboutpage.banner_alt": "Photo of the Mallorca Vibes team and restaurant",
     "aboutpage.banner_badge": "Unforgettable nights<span id='banner-badge-script'> at</span> Mallorca Vibes",
-    "aboutpage.product_heading": "<span id='product-1-heading-script'>From</span> Cuba<br>to Mallorca",
+    "aboutpage.product_heading": "<span id='product-1-heading-script'>From</span> Cuba and Venezuela<br>to Mallorca",
     "aboutpage.product_name": "Some of our specials",
     "aboutpage.f1_title": "Pork crackling and tostones",
     "aboutpage.f1_text": "Crispy outside, juicy inside",
